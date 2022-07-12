@@ -27,5 +27,5 @@ app.include_router(vote.router)
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to Mashilheiba dockerized fastAPI!!!"}
+    return {"message": "Mashilheiba dockerized fastAPI, successfully deploy from CI/CD pipeline"}
 
