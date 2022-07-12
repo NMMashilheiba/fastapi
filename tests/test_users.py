@@ -7,7 +7,7 @@ from app.config import settings
 def test_root(client):
     res = client.get("/"    )
     print(res.json())
-    assert res.json().get('message') == 'Welcome to Mashilheiba dockerized fastAPI!!!'
+    assert res.json().get('message') == 'Mashilheiba dockerized fastAPI, successfully deploy from CI/CD pipeline'
     assert res.status_code == 200
 
 def test_user_create(client):
